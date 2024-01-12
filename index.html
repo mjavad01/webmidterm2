@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Mr. or Ms.???</title>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Mr. or Ms.?</h1>
+    <form id="idCardForm">
+      <div class="form">
+        <p>Name:</p>
+        <input type="text" id="name" placeholder="Enter your name">
+      
+        <button   type="button" onclick="predict()">submit</button>
+        <button   type="button" onclick="save_name()">save</button> 
+      </div>
+      
+      <label for="male" class="radio-label">Male
+        <input type="radio" id="male" name="gender" value="male">
+      </label><br>      
+      <label for="female" class="radio-label">Female
+        <input type="radio" id="female" name="gender" value="female">
+      </label><br>
+
+
+      <div id = "save" class="saved" hidden="true" >
+        <p id="saved-data-name">Saved Answers</p>
+        <p id="saved-data-gender"></p>
+        <button  onclick="clear()" >clear</button>
+       
+      </div>
+
+      <div>    
+        <h2>Prediction:</h2>
+        <p id="Prediction"></p>
+        <p id="repitaion"></p>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

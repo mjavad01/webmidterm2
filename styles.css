@@ -1,0 +1,71 @@
+/* Setting overall styling for the body */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('./bg.png'); /* Background image from 'bg.png' */
+  background-size: cover; /* Ensures the background image covers the entire viewport */
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Removes default margin */
+  display: flex; /* Uses flexbox for centering */
+  align-items: center; /* Centers items vertically */
+  justify-content: center; /* Centers items horizontally */
+}
+
+/* Styling for the main container */
+.container {
+  background-color: #dce3bb; /* Light background color */
+  padding: 20px; /* Padding inside the container */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+/* Styling for labels */
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+/* Styling for radio button labels and their associated inputs */
+.radio-label {
+  display: flex; /* Aligns labels and inputs horizontally */
+  align-items: center; /* Centers items vertically */
+}
+.radio-label input {
+  margin-right: 5px; /* Adds a small margin between radio button and label text */
+}
+
+/* Styling for input fields */
+input {
+  border: 5px solid; /* Adds a solid border around input fields */
+  margin: auto; /* Centers input fields horizontally */
+  width: 50%; /* Occupies 50% of the container's width */
+  padding: 10px; /* Adds padding inside input fields */
+}
+
+/* Styling for the saved data section */
+.saved {
+  margin-top: 20px; /* Adds margin space at the top */
+  border: 1px dashed #1c1d1d; /* Dashed border style */
+  border-radius: 4px; /* Rounded corners for the saved data section */
+  padding: 10px; /* Adds padding inside the saved data section */
+}
+
+/* Styling for buttons */
+button {
+  background-color: #4caf50; /* Green background color */
+  color: white; /* White text color */
+  padding: 10px; /* Padding inside buttons */
+  border: none; /* Removes default button border */
+  border-radius: 4px; /* Rounded corners for buttons */
+  cursor: pointer; /* Displays a pointer cursor on hover */
+}
+
+/* Styling for button hover state */
+button:hover {
+  background-color: #45a049; /* Darker green background color on hover */
+}
+
+/* Styling to hide elements with the 'hidden' class */
+.hidden {
+  display: none; /* Hides elements with the 'hidden' class */
+}
